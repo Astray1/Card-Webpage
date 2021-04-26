@@ -1,0 +1,584 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+body{
+    background-color: #dce0e8;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+#Container{
+    background-color: #f4f5f7;
+    width: 85%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    position: relative;
+}
+.menubar{
+    background-color: #ffffff;
+    width: 300px;
+    flex-wrap: wrap;   
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.menudetails{
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: center;
+}
+.menudetails > a{
+    margin: 5px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.menudetails > a:hover{
+    background-color: lightblue;
+    color: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+#logo{
+    border-radius: 15px;
+    padding: 10px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+a:hover #logo{
+    background-color: white;
+}
+.menudetails a h1{
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.box{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 12px;
+    align-items: center;
+    background-color: #f4f5f7;
+    position: relative;
+    cursor: pointer;
+}
+.box > i{
+    background-color: black;
+    color: yellow;
+    font-size: 20px;
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+    margin-left: 3px;
+}
+.box >i:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.Box-details h4{
+    margin-bottom: 1px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.Box-details h5{
+    font-size: 15px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+    color: #798497;
+}
+.box:hover{
+    background-color: black;
+    color: white;
+}
+.box:hover > i{
+    background-color: white;
+    color: black;
+}
+.box:hover #link{
+    color: white;
+}
+
+#link{
+    font-size: 20px;
+    margin-left: 95px;
+}
+.Drop-down{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    list-style: none;
+    background-color: #404040;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+.box:hover .Drop-down{
+    display: block;
+}
+.box:hover .Drop-down li{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.box:hover .Drop-down li a{
+    text-decoration: none;
+    color: #BFBFBF;
+    display: block;
+    padding-bottom: 5px;
+}
+.box:hover .Drop-down li a:hover{
+    border-color: white;
+}
+.Menu-below{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: left;
+}
+#menu-box{
+    list-style: none;
+    margin-bottom: 130px;
+}
+#menu-box-li{
+    margin-bottom: 18px;
+}
+#menu-box-li a{
+    border: 2px solid transparent;
+    align-items: center;
+}
+#menu-box-li a:hover{
+    color: blue;
+    border-right: 3px blue solid;
+    outline: none;
+    background-color: #f4f5f7;
+}
+#menu-box-li a p{
+    font-size: 18px;
+    color: gray;
+}
+#menu-box-li a.active{
+    background-color: #f4f5f7;
+    border-right: 3px blue solid;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    font-weight: bold;
+}
+#menu-box-li a img{
+    width: 45px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#menu-box-li-unique{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#Button{
+    outline: none;
+    background-color: #0052cc;
+    color: white;
+    padding: 22px;
+    border-radius: 30px;
+    outline: none;
+    border: 0px black solid;
+    cursor: pointer;
+}
+#Button:hover{
+    background-color: rgb(3, 3, 146);
+    color: white;
+}
+#Button i{
+    font-size: 15px;
+    margin-left: -70px;
+}
+#Button p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.rightside{
+    position: relative;
+    flex: 60%;
+}
+.header{
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+.Search-box:hover > #Search-txt{
+    width: 380px;
+    background-color: #404040;
+    color: white;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 10px 0 0 10px;
+}
+.Search-box:hover > #Search-txt:focus{
+    background-color: white;
+    color: black;
+}
+#Search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0px;
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 0px;
+    transition: 0.5s linear;
+}
+.Search-btn > i{
+    background-color: white;
+    color: black;
+    padding: 15px;
+}
+.Search-btn > i:hover{
+    background-color: black;
+    color: white;
+}
+.Notifaction > a{
+    margin-left: 15px;
+}
+.Notifaction > a i{
+    padding: 15px;
+    background-color: white;
+}
+.Notifaction > a i:hover{
+    background-color: black;
+    color: white;
+}
+.Notifaction ul{
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 10px;
+    list-style: none;
+    background-color: white;
+    padding: 15px;
+    width: 350px;
+    height: 50vh;
+    overflow: scroll;
+    border-radius: 0 0 5px 5px;
+}
+.Notifaction:hover ul{
+    display: block;
+}
+.Notifaction:hover ul > h2{
+    font-size: 20px;
+    color: black;
+}
+.Notifaction:hover ul > li{
+    margin-top: 10px;
+    margin-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Notifaction:hover ul > li a{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.Notifaction:hover ul > li a:hover{
+    border-color: black;
+}
+.user{
+    margin-left: 20px;
+    margin-right: 25px;
+    position: relative;
+}
+.user > a{
+    margin-left: 10px;
+    border-left: 1px black solid;
+}
+.user > a > i{
+    padding: 15px;
+    margin-left: 25px;
+    margin-right: 0px;
+    background-color: white;
+}
+.user > a >i:hover{
+    background-color: black;
+    color: white;
+}
+.user ul{
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    list-style: none;
+    background-color: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 0 0 5px 5px;
+}
+.user:hover > ul{
+    display: block;
+}
+.user:hover > ul li{
+    margin-top: 10px;
+}
+.user:hover > ul li a{
+    display: block;
+    padding-bottom: 5px;
+}
+.user:hover > ul li a:hover{
+    border-color: black;
+}
+.Heading{
+    margin-left: 55px;
+    margin-top: 50px;
+}
+.Heading h2{
+    font-size: 44px;
+}
+.Heading h3{
+    margin-top: 10px;
+    opacity: 70%;
+    font-size: 18px;
+    align-items: center;
+}
+.Heading h3 > a{
+    background-color: yellow;
+    border-radius: 10px;
+    text-decoration: none;
+    height: 35px;
+    width: 35px;
+    cursor: text;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.Heading h3 > a img{
+    width: 18px;
+}
+.Heading h3 > i{
+    font-size: 20px;
+    background-color: yellow;
+    color: black;
+    margin-left: 2px;
+}
+.Card-box{
+    margin-top: 30px;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+.Card{
+    color: #2d3e5e;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 30%;
+}
+.Card-image img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.Card h3{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.Card > p{
+    font-size: 15px;
+    width: 70%;
+    color: #798497;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.Card-heading{
+    border: none;
+    justify-content: flex-end;
+}
+.Card-heading > i{
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.dropdown-wrapper{
+    position: relative;
+}
+.dropdown-wrapper a > i{
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.dropdown-wrapper a > i:hover{
+    background-color: black;
+    color: white;
+    outline: none;
+}
+.dropdown-wrapper ul{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    list-style: none;
+    display: none;
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+    width: 100px;
+}
+.dropdown-wrapper:hover ul{
+    display: block;
+}
+.dropdown-wrapper:hover ul li{
+    padding: 5px;
+}
+.dropdown-wrapper:hover ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+    color: white;
+}
+.dropdown-wrapper:hover ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.Card-image1{
+    width: 50%;
+    margin-left: 0px;
+    justify-content: flex-start;
+    margin-top: -28px;
+    margin-bottom: 15px;
+}
+.Card-image1 a{
+    background-color: #f4f5f7;
+    height: 45px;
+    width: 45px;
+}
+.Card-Details{
+    text-align: justify;
+    margin-left: 0px;
+}
+.Card-Details h2{
+    font-size: 25px;
+}
+.Card-Details h6{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #798497;
+    font-weight: 300;
+}
+.Card-Reminder{
+    margin-top: -10px;
+    padding: 10px;
+    width: 67%;
+}
+.Card-Rem01{
+    margin-top: 10px;
+}
+.Card-Rem01 p{
+    padding-left: 10px;
+    font-size: 15px;
+    color: #798497;
+}
+.user-listing{
+    justify-content: flex-end;
+    margin-left: 220px;
+    margin-top: -32px;
+    margin-bottom: 10px;
+    width: 32%;
+}
+.user-listing a{
+    background-color: white;
+    font-size: 11px;
+    margin-right: -5px;
+    border: 2px solid;
+}
+.user-listing a:hover{
+    border: 4px white solid;
+}
+#Container,.menubar,.menudetails,.menudetails > a,.menudetails > a:hover,.box,.box > i,.Box-details,.Menu-below,#menu-box,#menu-box-li,#menu-box-li a,#menu-box-li-unique,#Button,.rightside,.header,.Search-box,.Search-btn,.Search-btn > i,.Notifaction,.user,.Heading,.Heading h3,.Heading h3 > a,.Card-box,.Card-image,.Card-heading,.Card-heading > i,.dropdown-wrapper a > i,.Card-image1,.Card-image1 a,.Card-Details,.Card-Reminder,.Card-Rem01,.user-listing,.user-listing a,.Card-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Search-btn,.Search-btn > i,.Notifaction > a i,.user > a > i,.Heading h3 > i,.Card-image1 a,.user-listing a{
+    border-radius: 50%;
+}
+.Card-heading > i,.dropdown-wrapper a > i,.user-listing a{
+    height: 30px;
+    width: 30px;
+}
+.user-listing a:hover,.Card-image1 a:hover,.Card-heading > i:hover{
+    background-color: black;
+    color: Yellow;
+}
+.user-listing a,.Card-image1 a,#menu-box-li a,#Button,.Card-heading > i:hover,.dropdown-wrapper a > i:hover{
+    transition: all 0.2s linear; 
+}
+.menudetails > a,#link,#menu-box-li a,.Search-btn,.Notifaction > a,.Notifaction:hover ul > li a,.user > a,.user:hover > ul li a,.dropdown-wrapper a,.Card-image1 a,.user-listing a{
+    text-decoration: none;
+    color: black;
+}
+.box > i,#Button,.Search-box,.Search-btn,.Search-btn > i,.Notifaction,.user,.Heading h3 > a,.Card-image,.Card-image1 a,.user-listing a,.dropdown-wrapper a > i,.Card-heading > i{
+    justify-content: center;
+    align-items: center;
+}
+.Notifaction ul,.user ul, .user-listing a:hover{
+    z-index: 10;
+}
+#Container,.menubar,#Button,.rightside,.Card{
+    overflow: hidden;
+}
+.Box-details,.Menu-below,#menu-box,.rightside,.Notifaction,.user,.Heading,.Card,.Card-Details,.Card-Reminder{
+    flex-direction: column;
+}
+.box:hover .Drop-down li a,.Notifaction:hover ul > li a,.user:hover > ul li a{
+    border-bottom: 3px solid transparent;
+}
+.menudetails > a,.box,.Drop-down,.box:hover .Drop-down li a,.Menu-below,#menu-box-li a,.header,.Notifaction:hover ul > li a,.user:hover > ul li a,.Card-heading,.Card-Rem01{
+    width: 100%;
+}
+.user > a >i:hover:active,.Notifaction > a i:hover:active,.Search-btn > i:hover:active{
+    background-color: blue;
+}
+@media only screen and (max-width: 570px){
+    .rightside{
+        margin-left: -50px;
+    }
+    .Card-box{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Card{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .rightside{
+        margin-left: -50px;
+    }
+    .Card-box{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Card{
+        margin-left: 10px;
+        width: 400px;
+    }
+}
